@@ -54,7 +54,7 @@ namespace WorkingHouse_DartMFG
         private void label4_Click(object sender, EventArgs e) { }
         private void label5_Click(object sender, EventArgs e)
         {
-            Form_JohnGray johnGrayForm = new Form_JohnGray();
+            Form_JohnGray johnGrayForm = new Form_JohnGray(inventory);
             johnGrayForm.Show();
             this.Hide();
             johnGrayForm.FormClosed += (s, args) => this.Show();

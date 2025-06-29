@@ -17,6 +17,8 @@ namespace WorkingHouse_DartMFG
 
         private void button_Outside1_Click(object sender, EventArgs e) // НА СКЛАД
         {
+            MessageBox.Show("Закрыто", "[TERMINAL-79]", MessageBoxButtons.OK);
+            /*
             if (menu.IsDay)
             {
                 Form_Storage Storage = new Form_Storage(inventory, menu);
@@ -27,6 +29,7 @@ namespace WorkingHouse_DartMFG
             {
                 MessageBox.Show("Закрыто", "[TERMINAL-79]", MessageBoxButtons.OK);
             }
+            */
         }
 
         private void button_Outside2_Click(object sender, EventArgs e) // В ЦЕХ

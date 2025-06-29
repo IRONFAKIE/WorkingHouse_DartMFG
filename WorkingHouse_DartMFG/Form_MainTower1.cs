@@ -37,8 +37,8 @@ namespace WorkingHouse_DartMFG
 
         private void button_MainTower1_3_Click(object sender, EventArgs e) // ЛЕСТНИЦА
         {
-            Form_MainTower1 mainTower1 = new Form_MainTower1(inventory, menu);
-            mainTower1.Show();
+            Form_MainTower2 mainTower2 = new Form_MainTower2(inventory, menu);
+            mainTower2.Show();
             Close();
         }
     }

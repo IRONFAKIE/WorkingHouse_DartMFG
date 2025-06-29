@@ -26,7 +26,6 @@ namespace WorkingHouse_DartMFG
 
         private void Form_Store_FormClosed(object sender, FormClosedEventArgs e)
         {
-            // При закрытии магазина показываем кафетерию
             cafeteriaForm?.Show();
         }
 

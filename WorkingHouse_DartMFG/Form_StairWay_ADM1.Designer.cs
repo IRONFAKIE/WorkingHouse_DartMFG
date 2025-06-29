@@ -37,7 +37,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Times", 12F);
+            label1.Font = new Font("Times New Roman", 12F);
             label1.Location = new Point(41, 9);
             label1.Name = "label1";
             label1.Size = new Size(58, 19);
@@ -47,7 +47,7 @@
             // button1
             // 
             button1.AutoSize = true;
-            button1.Font = new Font("Times", 12F);
+            button1.Font = new Font("Times New Roman", 12F);
             button1.Location = new Point(12, 110);
             button1.Name = "button1";
             button1.Size = new Size(114, 29);
@@ -59,7 +59,7 @@
             // button2
             // 
             button2.AutoSize = true;
-            button2.Font = new Font("Times", 12F);
+            button2.Font = new Font("Times New Roman", 12F);
             button2.Location = new Point(12, 75);
             button2.Name = "button2";
             button2.Size = new Size(114, 29);
@@ -71,7 +71,7 @@
             // button3
             // 
             button3.AutoSize = true;
-            button3.Font = new Font("Times", 12F);
+            button3.Font = new Font("Times New Roman", 12F);
             button3.Location = new Point(12, 40);
             button3.Name = "button3";
             button3.Size = new Size(114, 29);
@@ -90,6 +90,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
+            ForeColor = Color.Black;
             Name = "Form_StairWay_ADM1";
             Text = "Form_StairWay_ADM1";
             ResumeLayout(false);

@@ -46,21 +46,25 @@
             // 
             // label1
             // 
-            label1.BackColor = Color.Transparent;
-            label1.Location = new Point(466, 356);
-            label1.Name = "label1";
-            label1.Size = new Size(145, 357);
-            label1.TabIndex = 17;
-            label1.Text = "Обыск";
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label1.Location = new System.Drawing.Point(466, 318);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 395);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Обыск";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
-            label2.BackColor = Color.Transparent;
-            label2.Location = new Point(100, 473);
-            label2.Name = "label2";
-            label2.Size = new Size(338, 197);
-            label2.TabIndex = 18;
-            label2.Text = "Обыск";
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label2.Location = new System.Drawing.Point(100, 449);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(338, 221);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Обыск";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form_Buro
             // 

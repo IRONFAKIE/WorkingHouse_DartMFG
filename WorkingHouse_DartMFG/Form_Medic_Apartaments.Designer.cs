@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Medic_Apartaments));
             button_Medic_Apartaments_1 = new Button();
             SuspendLayout();
             // 
             // button_Medic_Apartaments_1
             // 
-            button_Medic_Apartaments_1.Font = new Font("Times", 14F);
+            button_Medic_Apartaments_1.Font = new Font("Times New Roman", 14F);
             button_Medic_Apartaments_1.Location = new Point(30, 720);
             button_Medic_Apartaments_1.Name = "button_Medic_Apartaments_1";
             button_Medic_Apartaments_1.Size = new Size(200, 30);
@@ -46,6 +47,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(804, 781);
             Controls.Add(button_Medic_Apartaments_1);
             Name = "Form_Medic_Apartaments";

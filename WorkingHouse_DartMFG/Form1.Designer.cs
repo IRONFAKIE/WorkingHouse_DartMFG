@@ -95,7 +95,7 @@
             label1.Name = "label1";
             label1.Size = new Size(178, 30);
             label1.TabIndex = 4;
-            label1.Text = "Alpha Test 1.0.1";
+            label1.Text = "Alpha Test 1.0.2";
             // 
             // pictureBox1
             // 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Hall_ADM2));
             button_Hall_ADM2_4 = new Button();
             button_Hall_ADM2_2 = new Button();
             button_Hall_ADM2_1 = new Button();
@@ -37,7 +38,7 @@
             // 
             // button_Hall_ADM2_4
             // 
-            button_Hall_ADM2_4.Font = new Font("Times", 14F);
+            button_Hall_ADM2_4.Font = new Font("Times New Roman", 14F);
             button_Hall_ADM2_4.Location = new Point(30, 720);
             button_Hall_ADM2_4.Name = "button_Hall_ADM2_4";
             button_Hall_ADM2_4.Size = new Size(200, 30);
@@ -48,7 +49,7 @@
             // 
             // button_Hall_ADM2_2
             // 
-            button_Hall_ADM2_2.Font = new Font("Times", 14F);
+            button_Hall_ADM2_2.Font = new Font("Times New Roman", 14F);
             button_Hall_ADM2_2.Location = new Point(236, 684);
             button_Hall_ADM2_2.Name = "button_Hall_ADM2_2";
             button_Hall_ADM2_2.Size = new Size(200, 30);
@@ -59,7 +60,7 @@
             // 
             // button_Hall_ADM2_1
             // 
-            button_Hall_ADM2_1.Font = new Font("Times", 14F);
+            button_Hall_ADM2_1.Font = new Font("Times New Roman", 14F);
             button_Hall_ADM2_1.Location = new Point(30, 684);
             button_Hall_ADM2_1.Name = "button_Hall_ADM2_1";
             button_Hall_ADM2_1.Size = new Size(200, 30);
@@ -70,7 +71,7 @@
             // 
             // button_Hall_ADM2_3
             // 
-            button_Hall_ADM2_3.Font = new Font("Times", 14F);
+            button_Hall_ADM2_3.Font = new Font("Times New Roman", 14F);
             button_Hall_ADM2_3.Location = new Point(442, 684);
             button_Hall_ADM2_3.Name = "button_Hall_ADM2_3";
             button_Hall_ADM2_3.Size = new Size(200, 30);
@@ -81,7 +82,7 @@
             // 
             // button_Hall_ADM2_5
             // 
-            button_Hall_ADM2_5.Font = new Font("Times", 14F);
+            button_Hall_ADM2_5.Font = new Font("Times New Roman", 14F);
             button_Hall_ADM2_5.Location = new Point(236, 720);
             button_Hall_ADM2_5.Name = "button_Hall_ADM2_5";
             button_Hall_ADM2_5.Size = new Size(200, 30);
@@ -94,6 +95,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(804, 781);
             Controls.Add(button_Hall_ADM2_5);
             Controls.Add(button_Hall_ADM2_3);

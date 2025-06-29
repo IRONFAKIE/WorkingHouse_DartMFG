@@ -24,44 +24,19 @@ namespace WorkingHouse_DartMFG
 
         private void button_FoieR_2_Click(object sender, EventArgs e)
         {
-            if (menu.SoldatySpyat)
-            {
-                Form_StairWay_ADM1 stairWay_ADM1 = new Form_StairWay_ADM1(inventory, menu);
-                stairWay_ADM1.Show();
-                Close();
-            }
-            else
-            {
-                MessageBox.Show("Закрыто", "[TERMINAL-79]", MessageBoxButtons.OK);
-            }
+            Form_StairWay_ADM1 stairWay_ADM1 = new Form_StairWay_ADM1(inventory, menu);
+            stairWay_ADM1.Show();
+            Close();
         }
 
         private void button_FoieR_3_Click(object sender, EventArgs e)
         {
-            if (menu.SoldatySpyat)
-            {
-                Form_Kladovka Kladovka = new Form_Kladovka(inventory, menu);
-                Kladovka.Show();
-                Close();
-            }
-            else
-            {
-                MessageBox.Show("Закрыто", "[TERMINAL-79]", MessageBoxButtons.OK);
-            }
+            MessageBox.Show("Закрыто", "[TERMINAL-79]", MessageBoxButtons.OK);
         }
 
         private void button_FoieR_4_Click(object sender, EventArgs e)
         {
-            if (menu.IsDay)
-            {
-                Form_Storage Storage = new Form_Storage(inventory, menu);
-                Storage.Show();
-                Close();
-            }
-            else
-            {
-                MessageBox.Show("Закрыто", "[TERMINAL-79]", MessageBoxButtons.OK);
-            }
+            MessageBox.Show("Закрыто", "[TERMINAL-79]", MessageBoxButtons.OK);
         }
     }
 }

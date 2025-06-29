@@ -3,10 +3,13 @@ namespace WorkingHouse_DartMFG
     public partial class Form_JohnGray : Form
     {
         private int dialogueState = 0;
+        private bool bookGiven = false;
+        private Form_Inventory inventory;
 
-        public Form_JohnGray()
+        public Form_JohnGray(Form_Inventory inventory)
         {
             InitializeComponent();
+            this.inventory = inventory;
             button3.Visible = false;
             button4.Visible = false;
             StartDialogue();
@@ -20,6 +23,40 @@ namespace WorkingHouse_DartMFG
             dialogueState = 1;
         }
 
+        private void CheckForBook()
+        {
+            if (bookGiven)
+            {
+                MessageBox.Show("У меня уже есть книга", "Джон Грей", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+                return;
+            }
+
+            bool hasBook = false;
+            foreach (var item in inventory.listBox1.Items)
+            {
+                if (item.ToString() == "КНИГА")
+                {
+                    hasBook = true;
+                    break;
+                }
+            }
+
+            if (hasBook)
+            {
+                inventory.removeItem("КНИГА");
+                inventory.plusOA(500);
+                MessageBox.Show("СПАСИБО ЗА КНИГУ, ПРИОЧЕНЬ БЛАГОДАРЕН ВАМ", "Джон Грей", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                bookGiven = true;
+            }
+            else
+            {
+                MessageBox.Show("У вас нет книги", "Джон Грей", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            this.Close();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             switch (dialogueState)
@@ -29,8 +66,8 @@ namespace WorkingHouse_DartMFG
                     button1.Visible = false;
                     button2.Visible = false;
                     button3.Visible = false;
-                    button4.Visible = true; // Показываем кнопку "Продолжить"
-                    button4.Text = "Закончить разговор";
+                    button4.Visible = true;
+                    button4.Text = "Завершить диалог";
                     break;
 
                 case 2:
@@ -93,9 +130,12 @@ namespace WorkingHouse_DartMFG
                 dialogueState = 5;
                 button1_Click(sender, e);
             }
-            else if (dialogueState == 0)
+            else if (button4.Text == "Завершить диалог")
             {
-                // Закрываем только эту форму, а не всё приложение
+                CheckForBook();
+            }
+            else
+            {
                 this.Close();
             }
         }
